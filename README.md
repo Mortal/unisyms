@@ -12,6 +12,11 @@ in unisyms.py for `<=`, `>=`, `eps`, `sqrt`, Greek upper/lowercase letters,
 super/subscript digits e.g. `^2`, `_5`, and parentheses `^(`, `_)`.
 Completion is supported.
 
+In the `text` filetype (i.e. in `*.txt` files), backslash in insert mode
+is mapped to the same function as `CTRL-B`, except space is mapped to return
+while inputting the character name. This allows you to type `\gamma `
+(including the space) to insert a γ.
+
 Invoke `:Uniname` on a range of lines to replace non-ASCII characters
 with their named-escape equivalent in Python, e.g. `γ` is replaced by
 `\N{GREEK SMALL LETTER GAMMA}`.
