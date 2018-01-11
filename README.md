@@ -27,3 +27,10 @@ Installation
 Requires fontunicode: `pip install --user git+https://github.com/Mortal/font-unicode`.
 
 Copy/symlink unisyms.py into `~/.vim/python3` and add `source path/to/unisyms.vim` in your `.vimrc`.
+
+TODO
+----
+
+Use [mathspec](http://mirrors.dotsrc.org/ctan/macros/xetex/latex/mathspec/mathspec.sty)
+and [unicode-math-table](http://mirror.hmc.edu/ctan/macros/latex/contrib/unicode-math/unicode-math-table.tex)
+to translate input to `CTRL-B`.
