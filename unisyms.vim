@@ -20,3 +20,13 @@ function! Unisyminput()
     return py3eval('unisyms.try_lookup(' . json_encode(g:unisyminputlast) . ')')
 endfunction
 inoremap <C-b> <C-r>=Unisyminput()<CR>
+
+function! Unisyminput2()
+    cmap <Space> <CR>
+    try
+	return Unisyminput()
+    finally
+	cunmap <Space>
+    endtry
+endfunction
+autocmd FileType text inoremap <buffer> \ <C-r>=Unisyminput2()<CR>
